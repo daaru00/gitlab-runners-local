@@ -1,0 +1,9 @@
+version: '3'
+services:
+  project1:
+    build: .
+    container_name: "gitlab-runner-project1"
+    environment: 
+      REGISTRATION_TOKEN: "<registration token here>"
+    volumes:
+     - /var/run/docker.sock:/var/run/docker.sock
